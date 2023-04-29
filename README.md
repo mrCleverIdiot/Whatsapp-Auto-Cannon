@@ -25,11 +25,11 @@ Install Whatsapp-Auto-Cannon with npm
 - change connection string
 - create database `whatsapp_auto_cannon`
 - create table 
-`CREATE TABLE `phone_numbers` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `phone_number` varchar(15) DEFAULT NULL,
-  `message` text,
-  PRIMARY KEY (`id`)
+`CREATE TABLE phone_numbers (
+  id bigint unsigned NOT NULL AUTO_INCREMENT,
+  phone_number varchar(15) DEFAULT NULL,
+  message text,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;`
 - run script `node mysq_index.js`
 
